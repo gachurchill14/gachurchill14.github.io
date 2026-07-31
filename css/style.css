@@ -713,8 +713,7 @@ td{
 ------------------------------ */
 
 .card,
-.button,
-.profile-photo{
+.button{
 
     animation:fadeUp .6s ease;
 
