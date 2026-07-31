@@ -1,0 +1,7 @@
+# robots.txt for Churchill Writes
+# https://churchillwrites.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://churchillwrites.com/sitemap.xml
