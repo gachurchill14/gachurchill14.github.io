@@ -116,71 +116,53 @@ Working remotely with clients worldwide.
 
 <h2>Send a Message</h2>
 
-<form
-action="https://formspree.io/f/YOUR_FORM_ID"
-method="POST"
-class="contact-form">
+  <form action="https://formspree.io/f/mzdnnkje" method="POST" class="contact-form">
 
-<label for="name">Name</label>
+        <label for="name">Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required
+        >
 
-<input
-type="text"
-id="name"
-name="name"
-required>
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+        >
 
-<label for="email">Email</label>
+        <label for="subject">Subject</label>
+        <input
+            type="text"
+            id="subject"
+            name="subject"
+        >
 
-<input
-type="email"
-id="email"
-name="email"
-required>
+        <label for="message">Message</label>
+        <textarea
+            id="message"
+            name="message"
+            rows="8"
+            required
+        ></textarea>
 
-<label for="organisation">Organisation</label>
+        <!-- Spam protection -->
+        <input
+            type="text"
+            name="_gotcha"
+            style="display:none"
+            tabindex="-1"
+            autocomplete="off"
+        >
 
-<input
-type="text"
-id="organisation"
-name="organisation">
+        <button type="submit" class="button">
+            Send Message
+        </button>
 
-<label for="subject">Project Type</label>
-
-<select
-id="subject"
-name="subject">
-
-<option>Patient Education</option>
-
-<option>Medical Writing</option>
-
-<option>Scientific Editing</option>
-
-<option>Science Communication</option>
-
-<option>Rare Disease Content</option>
-
-<option>Other</option>
-
-</select>
-
-<label for="message">Message</label>
-
-<textarea
-id="message"
-name="message"
-rows="8"
-required></textarea>
-
-<button
-type="submit"
-class="button">
-
-Send Message
-
-</button>
-
-</form>
+    </form>
 
 </div>
 
